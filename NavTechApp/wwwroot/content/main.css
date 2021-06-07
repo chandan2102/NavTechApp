@@ -1,0 +1,240 @@
+﻿.body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-image: url(../images/bg_1.gif);
+}
+
+.logout_text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #166fba;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+    .logout_text a {
+        color: #166fba;
+        text-decoration: none;
+    }
+
+        .logout_text a:hover {
+            color: #82898c;
+            text-decoration: none;
+        }
+
+
+.logintext {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #002b6a;
+}
+
+.logout_bottombg {
+    background-image: url(../images/logout_bottombbg.gif);
+    background-repeat: repeat;
+    height: 5px;
+}
+
+.upc_text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #208fec;
+    padding-left: 8px;
+    background-image: url(../images/upc_topbg.gif);
+    background-repeat: repeat;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.upc_text_2 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #208fec;
+    padding-left: 6px;
+    background-image: url(../images/upc_topbg.gif);
+    background-repeat: repeat;
+    height: 20px;
+    vertical-align: middle;
+}
+
+    .upc_text_2 a {
+        text-decoration: none;
+        color: #208fec;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+        .upc_text_2 a:hover {
+            text-decoration: none;
+            color: #006699;
+        }
+
+.header_text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #166fba;
+}
+
+.planetext {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.table_text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #666666;
+    padding-right: 15px;
+}
+
+.form_text {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333333;
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+}
+
+.form_text_costchange {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333333;
+    padding-left: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+}
+
+.sub_form_text {
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 4px;
+    color: #333333;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.style6 {
+    color: #166fba;
+    font-weight: bold;
+}
+
+.fieldset {
+    color: #990000;
+    border: 1px solid #4298D7;
+    padding: 0;
+    margin: 0 0 0;
+}
+
+.legend {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.sub_headtext {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+}
+
+.tdborder {
+    border: 1px solid;
+    padding: 4px;
+    color: #87BFDE;
+}
+
+.footertext {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #247EC8;
+    vertical-align: middle;
+}
+
+.blueTblBorder {
+    border: 1px solid #6699FF;
+    font-size: 10px;
+    padding-left: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 4px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.leftmenutablepadding {
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+}
+
+.starcolor {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FF3366;
+}
+
+.form_text_radio {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333333;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.TD {
+    padding-left: 6px;
+}
+
+.text {
+    font-size: 10px;
+    color: #000000;
+    font-style: normal;
+    font-family: verdana,tahoma,arial,geneva,helsans-serif;
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+.errorText {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #CC0000;
+}
+
+.logInBoxBg {
+    background-image: url(../images/logIn_middleBg.gif);
+    background-repeat: repeat-x;
+    height: 178px;
+}
+
+.bd-example-modal-lg .modal-dialog {
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 24px);
+}
+
+    .bd-example-modal-lg .modal-dialog .modal-content {
+        background-color: transparent;
+        border: none;
+    }

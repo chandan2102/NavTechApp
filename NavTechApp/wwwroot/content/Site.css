@@ -1,0 +1,521 @@
+﻿body {
+    padding-top: 19px;
+    /*padding-bottom: 20px;*/
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 530px;
+    margin-top: 44px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default 
+input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.body-header-title h3 {
+    text-decoration: underline;
+    text-shadow: 4px 4px 3px #CCC;
+    /* color: #ea1c28; */
+    text-transform: uppercase;
+}
+
+
+/*Custom css for pages*/
+.Space {
+}
+
+.AutoScroll {
+    height: 200px;
+    overflow: auto;
+}
+
+
+/*WEB Grid CSS*/
+
+.edit-mode {
+}
+
+.edit-user {
+}
+
+    .edit-user display-mode {
+    }
+
+.save-user edit-mode {
+}
+
+.display-mode {
+}
+
+.cancel-user {
+}
+
+.webgrid-table {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    width: 650px;
+    display: table;
+    border-collapse: collapse;
+    border: solid 1px #C5C5C5;
+    background-color: white;
+}
+
+    .webgrid-table td, th {
+        border: 1px solid #C5C5C5;
+        padding: 3px 7px 2px;
+    }
+
+.webgrid-header, .webgrid-header a {
+    background-color: #E3E3E3;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+}
+
+.webgrid-footer {
+}
+
+.webgrid-row-style {
+    padding: 3px 7px 2px;
+}
+
+.webgrid-alternating-row {
+    background-color: #F5F5F5;
+    padding: 3px 7px 2px;
+}
+
+.col1Width {
+    width: 50px;
+}
+
+.col2Width {
+    width: 200px;
+}
+
+/*   Theming CSS   */
+.header_area {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8f8f8+0,f2f2f2+100 */
+    background: #f8f8f8; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #f8f8f8 0%, #f2f2f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f8f8f8 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f8f8f8 0%,#f2f2f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f8f8f8 0%,#f2f2f2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f8f8f8 0%,#f2f2f2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-8 */
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 1px 1px #fff inset;
+    box-shadow: 0 2px 7px #c2c1bd;
+    margin-bottom: 0;
+}
+
+.footer_area {
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    background-color: #000;
+    color: #b1b0a7;
+}
+
+    .footer_area p {
+        padding-top: 20px;
+    }
+
+.lucky_btn, .btn-default {
+    background-color: #ea1c28 !important;
+    color: #fff;
+    border: 1px solid #a4060f;
+    transition: 0.5s ease all;
+    height: 30px;
+    padding: 0 12px;
+    font-size: 13px;
+}
+
+.login_area {
+    margin: 90px auto 0;
+    float: none;
+}
+
+    .login_area .panel-default > .panel-heading {
+        background: rgb(255,255,255); /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmM2YyZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,242,235,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,242,235,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f2eb',GradientType=0 ); /* IE6-8 */
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+        .login_area .panel-default > .panel-heading .glyphicon-lock {
+            font-size: 19px;
+        }
+
+body.login {
+    background: url(../image/Header2-2-1600x420_1.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.header_nav {
+    margin-top: 8px;
+}
+
+    .header_nav li a {
+        text-transform: uppercase;
+    }
+
+        .header_nav li a:hover {
+            color: #ea1c28 !important;
+        }
+
+.left_panel {
+    background-color: #fafafa;
+}
+
+    .left_panel #main-menu {
+        min-height: 493px;
+        background: none;
+    }
+
+#main-menu > li {
+    margin-top: 0;
+}
+
+    #main-menu > li > a {
+        background: dodgerblue;
+        padding: 9px 20px;
+        font-weight: 700;
+        border-bottom: 1px solid dodgerblue;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 0;
+        margin: 0;
+        transition: all 0.5s ease;
+        font-size: 14px;
+    }
+
+        #main-menu > li > a:hover, #main-menu > li > a.selected {
+            background: rgb(255,255,255); /* Old browsers */
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmM2YyZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,242,235,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(243,242,235,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* IE10+ */
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(243,242,235,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f2eb',GradientType=0 ); /* IE6-8 */
+            color: #333;
+        }
+
+.left_panel {
+    padding-left: 0;
+}
+
+
+input[type="text"], .form-control {
+    transition: all 0.3s ease 0s;
+    box-shadow: none;
+    border: 1px solid #eee;
+    line-height: 28px;
+}
+
+.description_textbox {
+    min-height: 30px;
+}
+
+.right_panel {
+    width: 82.3333% !important;
+}
+
+@media screen\0 {
+    .right_panel {
+        width: 81.3333% !important;
+    }
+}
+
+
+.right_panel .area {
+    background: #fafafa;
+    border: 1px solid #c9c9c9;
+    border-radius: 3px;
+    margin-bottom: 11px;
+    margin-top: 10px;
+    padding-top: 6px;
+}
+
+.btn-file {
+    margin-top: 5px;
+}
+
+.right_panel .form-group {
+    margin-bottom: 6px;
+}
+
+.table thead > tr > th {
+    vertical-align: top;
+    background-color: #ffffff;
+}
+
+.form-control:focus {
+    border-color: #cd001a;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(205, 0, 26, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(205, 0, 26, 0.6);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    min-height: 1500px;
+    height: 100%;
+    /*background: url(../image/black_transparent.png) 0 0 repeat;*/
+    z-index: 9999999999;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.small_btn {
+    width: 100px;
+}
+
+.upload_btn {
+    width: 220px;
+    float: right;
+}
+
+/*table { display: inline-block; height: 200px; overflow-y: scroll; }
+thead { position: fixed; margin-top: -30px; }*/
+
+
+
+/* 28.09.2015 */
+.landingpage_area {
+    min-height: 580px;
+}
+
+.landing_title, .landing_pic {
+    margin: 0 auto;
+    float: none;
+}
+
+.landing_title {
+    border-bottom: 1px solid #ccc;
+    font-size: 30px;
+    text-align: center;
+    color:  dodgerblue;
+    line-height: 52px;
+    margin-bottom: 15px;
+    margin-top: 29px;
+}
+
+.UPC {
+    width: 12%;
+}
+
+.Description {
+    width: 12%;
+}
+
+.Uom {
+    width: 7%;
+}
+
+.Size {
+    width: 8%;
+}
+
+.Reg {
+    width: 8%;
+}
+
+.Effctive {
+    width: 8%;
+}
+
+.Vendor {
+    width: 8%;
+}
+
+.Multiple {
+    width: 9%;
+}
+
+.Retail {
+    width: 9%;
+}
+
+.Weighted {
+    width: 9%;
+}
+
+.Delete {
+    width: 6%;
+}
+
+
+
+
+/*table { display: inline-block; height: 200px; overflow-y: scroll;width: }
+thead { position: fixed; margin-top: -30px; }*/
+
+
+.logo {
+    max-height: 60px;
+    padding: 5px;
+}
+
+.header_area .navbar-header {
+    margin-top: 5px;
+}
+
+.NewHeader {
+    width: 98.5%;
+    font-size: 12px;
+}
+
+    .NewHeader th, .webGrid td {
+        padding: 5px !important;
+    }
+
+
+
+.loading {
+    margin: auto;
+}
+
+    .loading span {
+        line-height: 32px;
+        margin-left: 12px;
+        font-size: 16px;
+        vertical-align: middle;
+    }
+
+    /*Loder section*/
+    .loading img {
+        vertical-align: middle;
+    }
+
+.loading_wrp {
+    background-color: #FFF;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+}
+
+    .loading_wrp .x16 span {
+        line-height: 16px;
+        font-size: 12px;
+        margin-left: 6px;
+    }
+
+    .loading_wrp .x32 img {
+        width: 32px;
+        height: 32px;
+    }
+
+.ui-datepicker {
+    z-index: 9999 !important;
+}
+
+
+.button_area {
+    margin-top: 10px;
+}
+
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+
+.Delete a {
+    color: white;
+}
+
+    .Delete a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+.highlighted {
+    background-color: #F7EDAB !important;
+    color: black !important;
+}
+
+.webGrid td input[type=text], .webGrid td select {
+    height: 28px !important;
+    border: 1px solid #656565 !important;
+    border-radius: 4px !important;
+    padding-left: 2px !important;
+}
+
+
+input[readonly].default-cursor {
+    /*cursor: default;*/
+    cursor: pointer;
+    background-color: white;
+}
+
+
+input[readonly].disabled-cursor {
+    cursor: default;
+    background-color: #f5f5f5;
+}
+
+.SpanCursor {
+    cursor: pointer;
+}
+
+.divBorder {
+    border: 1px solid black;
+    padding-top: 5px !important;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,182 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+html, form { margin: 0; padding: 0;}
+
+body   
+{
+    background: #F4F9FD;
+    font-size: .75em;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+}
+
+/* PRIMARY LAYOUT STYLES
+---------------------------------------------------------*/
+.header {
+    background-color: #442463;
+    height: 60px;
+}
+
+.mast {
+    background-image: none;
+    width: 940px;
+    margin: 0px auto 0px auto;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-left: -5px;
+}
+
+.footer 
+{
+    width: 940px;
+    height: 44px;
+    margin: 15px auto 15px auto;
+}
+
+.inner-footer
+{
+    margin: 0px auto 0px auto;
+    text-align: center;
+    width: 940px;
+}
+
+.content-outer
+{
+    background-color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.content-center
+{
+    width: 938px;
+    margin: 0px auto 0px auto;
+    background-color: #FFFFFF;
+    display: block;
+    border: 1px solid #FFFFFF;
+    min-height: 400px;
+    padding-top: 20px;
+}
+
+.content-pad
+{
+    padding: 0px 15px 15px 15px;
+    border: 1px solid #FFFFFF;
+    width: 908px;
+    min-height: 400px;
+}
+
+.logo
+{
+    margin-top: 11px;
+    float: left;
+    width: 332px;
+}
+
+.mast-links 
+{
+    float: right;
+    margin-top: 6px;
+    color: #FFFFFF;
+}
+
+.mast-links  A:link
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.mast-links A:visited 
+{
+    color: #FFFFFF;
+}
+
+.mast-links  A:hover 
+{
+    color: #FFFFFF;
+}
+
+.mast-links  A:active 
+{
+    color: #FFFFFF;
+}
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+/* Menu Styles
+----------------------------------------------------------*/
+.menu-wrapper
+{
+    margin-top: 14px;  
+    height: 35px;
+}
+/* Home Page Boxes
+----------------------------------------------------------*/
+.home-boxes
+{
+    background-color: #E4F2FB;
+    border-style: solid;
+    border-width: 2px;
+    border-color: inherit;
+    float: left;
+    width: 200px;
+    height:100%;
+   /* height: 250px;*/
+    margin-right: 5px;
+    cursor:pointer; 
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+}
+/*.home-boxes-Row2
+{ position:relative;
+     background-color: #E4F2FB;
+    border-style: solid;
+    border-width: 2px;
+    border-color: inherit;
+    float: left;
+    width: 200px;
+    height: 250px;
+    margin-right: 5px;
+    cursor:pointer; 
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+}*/
+.manage-header-boxes
+{   
+    background-color: #E4F2FB;
+    height: 24px;   
+    color:White;  
+    padding: 3px 7px 3px 7px; 
+    margin-bottom: 10px; 
+    border-bottom: 2px solid;
+    border-radius: 8px 8px 0px 0px / 8px 8px 0px 0px;
+}
+
+/* GRIDVIEW PAGINATION STYLES
+---------------------------------------------------------*/
+.pagination a,
+.pagination span
+{
+    display: block;
+    padding: 0.3em 0.5em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.pagination a 
+{
+    text-decoration: none;
+}
+
+.pagination span 
+{
+    border: 1px #AAE;
+	border-bottom-style:solid
+}

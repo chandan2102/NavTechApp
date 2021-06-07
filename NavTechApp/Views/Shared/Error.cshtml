@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Error";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<style>
+    .landing_title {
+        font-size: 20px;
+        color: darkred;
+    }
+
+    .error_title {
+        font-size: 18px;
+        color: #101010;
+    }
+
+    .error_Excep {
+        color: #101010;
+        font-family: 'Arial Rounded MT';
+        font-size: 22px;
+    }
+
+    #landingImg {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /*For mobiles only*/
+    @@media (min-width: 320px) and (max-width: 767px) {
+        .landing_title {
+            font-size: 20px;
+        }
+    }
+</style>
+
+
+<hgroup class="title landing_title">
+    <h2 class="error">An error occurred while processing your request. Please contact the system administrator.</h2>
+</hgroup>
+
+<div class="alert-error error_title ">
+    <p class="error_Excep">Exception Details:</p> @ViewBag.Exception
+</div>

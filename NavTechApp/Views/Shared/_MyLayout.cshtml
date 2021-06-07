@@ -1,0 +1,61 @@
+﻿@using Newtonsoft.Json;
+@using Newtonsoft.Json.Linq
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NavTechApp</title>
+
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" id="bs-css" />
+    <link href="~/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/jquery-ui.min.css" rel="stylesheet" />
+
+    <script src="~/js/jquery-1.12.4.min.js"></script>
+    <script src="~/js/jquery-ui.min.js"></script>
+    @RenderSection("Scripts", false/*required*/)
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/dataTables.bootstrap.min.js"></script>
+    <script src="~/js/angular.min.js"></script>
+    
+</head>
+<body class="size-1280 slide-to-left">
+    <section class="slide-content">
+        <section class="text-center">
+            <div class="content-wrapper">
+                <div class="container">
+                    @RenderBody()
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <div class="modal" id="progressModal">
+        <div id="loading-image" style="position: fixed; top: 45%; left: 50%; transform:translateX(-50%); display :none;">
+            <img src="~/Content/images/ajax-loader.gif" style="width:75px;height:75px;" />
+        </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content beautifyModal" style="top: 40%; width: 40% !important; height: 20% !important;">
+            <span class="close" onclick="CloseModal();">&times;</span>
+            <br>
+            <div id="myDialogText" style="margin-top: 25px;"></div>
+        </div>
+    </div>
+    <div class="modal" id="confirmModal">
+        <div class="modal_content_check beautifyModal">
+            <span class="close" onclick="CloseDeleteModal();">&times;</span>
+            <br>
+            <div class="myDialogTextCheck" id="myDialogTextCheck">Sure you want to delete the record?</div>
+            <button type="button" class="btn btn-primary" id="confirmYes">Yes</button>
+            <button type="button" class="btn btn-danger" id="confirmNo" data-dismiss="modal">No</button>
+        </div>
+    </div>
+</body>
+</html>

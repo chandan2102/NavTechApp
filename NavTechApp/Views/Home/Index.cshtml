@@ -1,0 +1,137 @@
+﻿@using NavTechApp.Models;
+@using System.Collections;
+
+@{
+    ViewData["Title"] = "Product List Page";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+    IEnumerable<Product> listPrep = ViewData["ListData"] as IEnumerable<Product>;
+}
+
+<link href="~/css/CustomCss/ProdListStyle.css" rel="stylesheet" />
+<script src="~/js/Custom Script/CommonScript.js"></script>
+<script src="~/js/angular.min.js"></script>
+<script src="~/js/Custom_Angular/ProdListNgScript.js"></script>
+<script src="~/js/Custom Script/ProdListScript.js"></script>
+<div ng-app="navtechApp">
+    <div ng-controller="prodController">
+
+        @{
+            string msg = Convert.ToString(TempData.Peek("msg"));
+            TempData.Remove("msg");
+            if (!string.IsNullOrEmpty(msg))
+            {
+                if (msg.ToUpper() == "CREATED")
+                {
+                    <span id="spnSuccess" class="text-success">Record updated successfully</span>
+                }
+                else
+                {
+                    <span id="spnError" class="text-danger">Error occured during record update </span>
+                }
+            }
+        }
+
+        <h3 class="text-center" title="Product List View">Product List View</h3>
+        <a class="link" style=" float: right; margin-right: 528px; " ng-click="OpenAddModal()" title="Click to add record.">Add Record/s</a>
+        <br />
+        <div class="bs-component">
+            <table class="table table-hover table-bordered" cellspacing="0">
+                <thead class="thead-light">
+                    <tr>
+                        <th class="top-border" ng-click="SortColumn('entityName')">EntityName</th>
+                        <th class="top-border" ng-click="SortColumn('fieldName')">FieldName</th>
+                        <th class="top-border" ng-click="SortColumn('isRequired')">IsRequired</th>
+                        <th class="top-border" ng-click="SortColumn('maxLength')">MaxLength</th>
+                        <th class="top-border" ng-click="SortColumn('fieldSource')">FieldSource</th>
+                        <th class="top-border" style="width: 80px;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="obj in ListData | filter:paginate | orderBy :sortColm : sortingOrder">
+                        <td>{{obj.entityName}}</td>
+                        <td>{{obj.fieldName}}</td>
+                        <td>{{obj.isRequired}}</td>
+                        <td>{{obj.maxLength}}</td>
+                        <td>{{obj.fieldSource}}</td>
+                        <td>
+                            <span style="float: right;margin-left: 10px;margin-right: 10px;">
+                                <a class="link" ng-click="DeleteRecord(obj)" title="Click to Delete record.">
+                                    <img src="../content/images/trash.png" alt="Delete icon" style="width:15px;height:17px;">
+                                </a>
+                            </span>
+                            <span style="float: right;">
+                                <a class="link" ng-click="OpenAddEditModal(obj)" title="Click to Edit record.">
+                                    <img src="../content/images/edit.png" alt="Edit icon" style="width:15px;height:17px;">
+                                </a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr ng-show="SearchResult">
+                        <td colspan="6">No records found</td>
+                    </tr>
+                </tbody>
+            </table>
+            <pagination total-items="totalItems" ng-model="currentPage"
+                        max-size="5" boundary-links="true"
+                        items-per-page="numPerPage" class="pagination-sm">
+            </pagination>
+        </div>
+
+        <form method="post" id="myform" enctype="multipart/form-data" asp-controller="Product" asp-action="Update" role="form">
+            <div class="modal" id="AddEditModal">
+                <div class="modal_content_AddEdit beautifyModal" style="top:30%">
+                    <span class="close" onclick="CloseAddEditModal();">&times;</span>
+                    <br>
+                    <h3 id="header">Edit Product</h3>
+                    <br>
+                    <div class="row">
+                        <div class="column">
+                            <div class="oneBlock">
+                                <div class="oneRec recLabel">Entity Name</div>
+                                <div class="oneRec recData">
+                                    <input type="text" id="txtEntNm" name="EntNm" maxlength="50" class="form-control" autocomplete="off" onkeypress="return filterSpclChar(event)" ng-model="EntNm" readonly='readonly'/>
+                                    <span id="spnEntNm" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="oneBlock">
+                                <div class="oneRec recLabel">Field Name</div>
+                                <div class="oneRec recData">
+                                    <input type="text" id="txtFldNm" name="FldNm" maxlength="50" class="form-control" autocomplete="off" onkeypress="return filterSpclChar(event)" ng-model="FldNm" readonly='readonly'>
+                                    <span id="spnFldNm" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="oneBlock">
+                                <div class="oneRec recLabel">Is Required</div>
+                                <div class="oneRec recData">
+                                    <input id="txtIsReq" name="IsReq" maxlength="1" class="form-control" autocomplete="off" onkeypress="return AllowZeroOrOne(event)" ng-model="IsReq">
+                                    <span id="spnIsReq" class="text-danger" style="float:right;padding-right:20px"></span>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="oneBlock">
+                                <div class="oneRec recLabel">Max Length</div>
+                                <div class="oneRec recData">
+                                    <input id="txtMaxLen" name="MaxLen" maxlength="3" class="form-control" autocomplete="off" onkeypress="return AllowNumber(event)" ng-model="MaxLen">
+                                </div>
+                                <span id="spnMaxLen" class="text-danger"></span>
+                            </div>
+                            <div class="oneBlock">
+                                <div class="oneRec recLabel">Field Source</div>
+                                <div class="oneRec recData">
+                                    <input id="txtFldSrc" name="FldSrc" maxlength="200" class="form-control" autocomplete="off" onkeypress="return filterSpclChar(event)" ng-model="FldSrc">
+                                </div>
+                                <span id="spnFldSrc" class="text-danger"></span>
+                            </div>
+
+                            <div class="oneBlock" style="margin-left: 340px; margin-top: 16px;">
+                                <button type="submit" class="btn btn-primary" onclick="return ValidateRecordBeforeSave();" id="confirmNo4">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

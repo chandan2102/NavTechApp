@@ -1,0 +1,1878 @@
+﻿/* Link Styles
+-----------------------------------------------------------*/
+a 
+{
+    color: #003880;    
+}
+
+a:link, a:visited
+{
+    color: #003880;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #006002;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active
+{
+    color: #006002;
+}
+
+p
+{
+    margin-bottom: 5px;
+    line-height: 1.6em;
+    margin-top: 5px;
+}
+
+/* IMAGES   
+----------------------------------------------------------*/
+IMG { border: none; }
+
+.button-disabled 
+{
+    cursor: default;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1
+{
+    color: #003880;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+h2
+{
+    color: #006002;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+h3 
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin: 10px 0px 5px;
+}
+
+.main-heading
+{
+    margin-top: 0px;
+}
+
+/* ERRORS   
+----------------------------------------------------------*/
+.error-summary
+{
+    color: Red;
+}
+
+
+/* MISC   
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+/* Home page styles   
+----------------------------------------------------------*/
+.home-left
+{
+    width: 703px;
+    float: left;
+    margin-top: 0px;
+}
+
+.home-right
+{
+    width: 218px;
+    margin-left: 15px;
+    border: 1px solid #EBF0F3;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.home-right-content
+{
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
+
+/* Admin Styles
+----------------------------------------------------------*/
+.manage-header
+{
+    background-color: #E4F2FB;
+    height: 24px;     
+    padding: 3px 7px 0px 7px; 
+    margin-bottom: 10px;
+}
+
+.manage-header span
+{
+    font-size: 14px; 
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px;
+    width: auto;
+    color: #003880;
+}
+
+.manage-header h1
+{
+    margin: 0px 0px 0px 0px;
+    width: auto;
+    color: #003880;
+    float: left;
+}
+
+.manage-header-links
+{
+    float: right;    
+    padding-top: 2px;
+}
+
+.search-params
+{
+    margin-top: 15px;
+    background-color: #E4F2FB;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.unit-sel-cell 
+{
+    vertical-align: top; 
+    width: 50%;
+}
+
+.unit-select-modal 
+{    
+}
+
+.hidden-fields 
+{
+    display: none;
+    height: 0px;
+    width: 0px;
+}
+
+
+/*Grid Styles
+----------------------------------------------------------*/
+
+.common-grid
+{
+    width: 100%;
+}
+
+.grid-row
+{
+    background-color: #f3f9fc;
+    /* height: 21px; */
+}
+.grid-row td
+{
+     padding:  3px;
+}
+
+.alt-grid-row
+{
+    background-color: #ffffff;    
+}
+
+.nested-alt-row
+{
+      background-color: #ffffff;   
+}
+
+.nested-row TD { padding: 3px 3px 3px 3px; }
+
+.nested-alt-row TD { padding: 3px 3px 3px 3px; }
+
+.nested-row
+{
+  
+    background-color: #F4F9FD;   
+    height: 20px;
+}
+
+.grid-header
+{
+    /*background-color: #e2f1fb;*/
+    height: 24px;
+}
+
+.grid-header th
+{
+    padding:  3px;
+    text-align: left;
+    color: #005f02;
+    font-weight: bold;
+}
+.grid-header th a { color: #005f02; font-weight: bold; }
+
+.pager-results 
+{
+    margin-right: 5px;
+}
+
+.grid-pager
+{
+    height: 24px;
+    margin: 10px 0px 10px 0px; 
+    float: right;
+    text-align: right;    
+    width: 100%;
+}
+
+
+.grid-page
+{
+    height: 20px;       
+    margin: 0px 7px;    
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.grid-page a 
+{
+    text-decoration: underline;
+}
+
+.grid-page.selected 
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pager-img-disabled { height: 20px; vertical-align: top; margin: 0px 6px; }
+
+.pager-img  {height: 20px; vertical-align: top; margin: 0px 6px; }
+
+.pager-img-disabled IMG { position: relative; top: 4px;}
+
+.pager-img IMG { position: relative; top: 4px; }
+
+
+td.left-command-col { width: 22px; vertical-align: top; padding: 5px 3px 1px }
+.right-command-col { text-align: right; }
+
+.grid-expand
+{
+    position: relative;
+    top: -3px;
+}
+
+.dialog-buttons
+{
+    float: right;
+}
+
+.dialog-buttons-center
+{
+   text-align: center;
+   margin-top: 15px;
+}
+
+.dialog-iframe
+{
+    width: 100%; height: 100%;
+}
+
+/*Criteria List Styles
+----------------------------------------------------------*/
+.criteria-table
+{
+    border: 1px solid #e2f1fb;
+    font-size: 0.9em;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+}
+
+.criteria-table TR
+{
+    width: 100%;
+}
+
+.criteria-table TH
+{
+    padding: 3px;
+    text-align: left;
+    background-color: #e2f1fb;
+}
+
+.criteria-row
+{
+    background-color: #FFFFFF;
+    height: 24px;
+}
+
+.alt-criteria-row
+{
+    background-color: #e2f1fb;
+    height: 24px;
+}
+
+.alt-criteria-row TD
+{
+    padding: 3px; 
+}
+
+.criteria-row TD
+{
+    padding: 3px;
+}
+
+.criteria-text-cell
+{
+    width: 90%;
+    text-align: left;
+}
+
+.criteria-table TBODY
+{
+    width: 100%;
+}
+
+.criteria-cmd-cell
+{  
+    text-align: right;
+    width: 10%;
+}
+
+.modal-selected-row
+{
+    background-color: #FCCAC9;
+}
+
+.modal-left-col { width: 100px; vertical-align: top; }
+
+.modal-command-col
+{
+    width: 95px;
+}
+
+.modal-command-col-narrow
+{
+    width: 5px;
+}
+
+.modal-command-col-narrow A
+{
+    position: relative;
+    top: 0px;
+}
+
+/* Search box styles
+******************************************/
+.search-control-container { vertical-align: top; }
+.search-ico 
+{
+    cursor: pointer;
+}
+
+.keyword-div
+{
+    float: left; 
+    margin-top: 3px;
+    position: relative;
+}
+.search-box-container 
+{
+    position: relative;
+}
+.search-box-container input
+{   
+    padding-right:  25px;
+    height: 16px;
+}
+
+.search-icon-div
+{
+    float: left;  
+    overflow: visible; 
+    position: absolute;     
+    top: 1px;    
+    padding: 1px;
+    background-color: transparent;
+}
+
+.search-button-div
+{
+    /* float: left; */
+}
+
+.search-img
+{
+    /* margin-left: 10px; */
+    cursor: pointer;
+}
+.search-keywords-parm 
+{
+    width: 294px;
+}
+.search-params table
+{
+    width: 100%;
+}
+.search-params td { padding: 3px; }
+.search-params .required-text {padding-left: 0px;}
+
+.search-form-section { float: left; } 
+
+.search-form-section .search-errors .error-summary  { margin: 0px; padding-top: 10px;}
+.search-form-section span.field-required { color: Red; margin: 0px 3px 0px 0px; width: auto;}
+
+.search-form-section.advanced { width: auto; }
+.search-form-section > div { float: left; }
+.search-form-section.general > div { width: 240px;  }
+.search-form-section.advanced > div { float: none; width: auto; }
+.search-form-section > div { padding: 2px 0px; }
+.search-form-section div label { display: block; margin: 0px 0px; }
+.search-form-section .search-button { padding: 17px 0px 0px 10px; }
+.search-form-section.general .search-button { padding-left: 0px; }
+
+.manage-users .search-form-section.general { width: 480px; }
+.unit-select-modal .search-form-section { width: auto; }
+.unit-select-modal .search-form-section > div { width: auto; padding-right: 6px; }
+
+
+
+.search-input { width: 200px; }
+
+/* FORM CLASSES   
+----------------------------------------------------------*/
+.edit-form 
+{
+    width: 100%;
+}
+
+.edit-form H1
+{  
+    font-size: 16px; 
+    padding: 5px 0px 5px 0px;
+}
+
+.edit-form p 
+{
+    margin-left: 10px;
+}
+
+.column-box 
+{
+    padding: 15px;
+}
+
+.two-thirds-div { width: 611px; float: left; margin: 15px 0px 15px 0px;}
+
+.one-third-div { width: 312px; margin: 15px 0px 15px 15px; float: left;}
+
+.right-check
+{
+    float: right;
+}
+
+.form-field
+{
+    float:  left;  
+    margin: 5px 15px 0px 0px;
+    width:  300px;
+}
+
+.form-field input { width: 270px; }
+.form-field .search-box-container input { width: 247px; }
+.form-field select { width:  276px; }
+.form-field textarea { width: 365px; }
+.form-field.checkbox 
+{        
+    width: auto;
+}
+.form-field.checkbox input
+{
+    width: auto;
+    vertical-align: bottom;
+    margin-bottom: 1px;
+}
+
+.form-label
+{
+    float: left;
+    width: 110px; /* previously: 150px */
+    margin: 5px 15px 0px 0px;   
+}
+
+.field-required
+{
+    float: left;
+    margin: 5px 0px 0px 0px;
+    color: Red;
+    width: 7px;
+}
+
+.required-text  
+{
+    font-style: italic;
+    padding-left: 10px;    
+}
+
+.required-text span
+{
+    color: Red;
+}
+
+.button-bar 
+{
+    margin: 15px auto 15px auto;
+    text-align: center;
+    width: auto;
+    border: 1px solid #e2f1fb;
+    padding: 15px;
+    background-color: #F4F9FD;
+}
+
+.form-update-message 
+{
+    margin: 10px auto 0px auto;
+}
+
+.button-bar A 
+{
+    /* margin: 0px 15px 0px 15px; */
+}
+
+/* Horizontal rule
+******************************************/
+HR 
+{
+    border: none;
+    background-color: #e2f1fb;
+    height: 2px;
+}
+
+/* Manage groups classes 
+*********************************************/
+.manage-groups .active { width: 99px; }
+
+.create-edit-group .form-label {width: auto; padding-right: 0px;}
+
+
+/* Manage org units classes 
+*********************************************/
+
+.manage-org-units .active { width: 99px; text-align: right; }
+
+/*GROUP RULE INTERFACE CLASSES
+********************************************/
+#add-row TD
+{
+    vertical-align: top;
+}
+
+.group-row-add { float: left; }
+.group-row-cancel { float: left; padding: 2px 0px 0px 10px; }
+
+.rule-input
+{
+    width: 200px;
+}
+
+.rule-editor
+{
+    text-align: left;    
+}
+
+.group-cell-wrapper
+{
+    width: 650px;
+}
+
+.rule-editor TD 
+{
+    padding-right: 10px;
+}
+
+#ruledisplay 
+{
+    margin-top: 10px;
+}
+
+.rule-div 
+{
+    /* margin: 5px 0px 5px 0px; */
+    text-align: left;
+    width: 918;
+    border: 1px solid #e2f1fb;  
+    background-color: #F4F9FD;
+    /* height: 18px; */
+    font-size: 14px;
+    padding: 4px 10px 4px 10px;
+}
+.rule-div.alt 
+{
+    background-color: #fff;
+}
+
+.rule-left
+{
+    float: left;
+}
+
+.rule-commands
+{
+     float: right; 
+     padding-top: 2px;
+}
+
+.related-rule-div 
+{
+    margin: 5px 0px 5px 30px;
+    text-align: left;
+    width: 876px;
+    /* border: 1px solid #e2f1fb;
+    background-color: #F4F9FD; */
+    height: 18px;
+    font-size: 14px;
+    padding: 2px 10px 0px 10px;
+}
+
+.add-related-panel
+{
+   margin: 0px 0px 0px 30px;
+   text-align: left;
+   width: 908px;  
+   display: none;
+}
+
+.add-rule-bar 
+{
+    margin: 5px auto 5px auto;
+    text-align: left;
+    width: auto;
+    border: 1px solid #e2f1fb;
+    padding: 10px;
+    background-color: #F4F9FD;
+}
+/* Manage Role Classes 
+********************************/
+.manage-roles .active { width: 99px; padding-right: 0px;}
+
+.role-cell-wrapper 
+{
+    width: 350px;
+}
+
+.role-desc-cell 
+{
+    vertical-align: top;
+    width: 575px;
+}
+.role-check-cell  
+{
+    vertical-align: top;
+    text-align: center; 
+}
+
+.role-name-cell  
+{
+    vertical-align: top;
+    text-align: left; 
+}
+
+.manage-permissions th.constraints-column 
+{
+    width: 100px;
+    text-align: center;
+}
+
+.manage-permissions th.constraints-column-role 
+{
+    width: 250px;
+    text-align: left;
+}
+
+.manage-permissions th 
+{
+    vertical-align: bottom;
+}
+
+.role-name-cell  
+{
+    text-align: left; 
+}
+
+.view-permissions th.constraints-column 
+{
+    width: 175px;
+    text-align: center;
+}
+
+.view-permissions th.constraints-column-role 
+{
+    width: 250px;
+    text-align: left;
+}
+
+.view-permissions .role-desc-cell 
+{
+    width: 450px;
+}
+
+.create-edit-role .form-label {width: 65px; padding-right: 0px;}
+
+/* Manage Performance Review 
+************************************/
+.arrow 
+{ 
+    cursor: pointer; 
+    background-image: url(/images/icons/arrow_sm_right.gif); 
+    background-repeat: no-repeat; 
+    height: 16px; 
+    width: 16px; 
+    background-position: 7px 5px;  
+}
+.arrow.selected  
+{
+    background-image: url(/images/icons/arrow_sm_down.gif); 
+}   
+.sort-arrow  
+{
+    cursor: pointer; 
+    padding-right: 2px; 
+    padding-bottom: 1px; 
+    background-image: url(/images/icons/arrow_sm_right.gif); 
+    background-repeat: no-repeat; 
+    height: 9px; 
+    min-width: 7px; 
+    background-position: 0px 4px; 
+    padding-left: 12px; 
+}
+th.sort-arrow  
+{
+    background-position: 0px 8px; 
+    padding-left: 10px; 
+}
+.sort-arrow.selected { background-image: url(/images/icons/arrow_sm_down.gif); }
+.sort-arrow.selected-desc { background-image: url(/images/icons/arrow_sm_up.gif); }
+.sort-arrow.selected-asc { background-image: url(/images/icons/arrow_sm_down.gif); }
+.reviews .review { height: 16px; padding: 3px; }
+
+.nested .grid-row td
+{
+    border-bottom: solid 2px #fff;
+    padding: 0px;
+}
+
+.reviews .assignment 
+{ 
+    min-height: 17px; 
+    padding: 3px; 
+    clear: both; 
+    padding-left: 36px;
+    width: 899px; 
+}
+.nested .grid-row.parent .grid-row.child
+{
+    background-color: #fff;
+    border-top: solid 1px #f3f9fc;
+}
+.reviews .review div, 
+.reviews .assignment div /*, .nested .grid-row.parent*/
+{ 
+    min-height: 20px;
+    float: left; 
+}
+.reviews .review div { float: left; }
+.reviews .assignments { margin-left: -28px; width: 910px; }
+
+.reviews .review .name { width: 520px; }
+.reviews .review .category { width: 150px; }
+.reviews .review .command { width: 210px; }
+    
+.reviews .assignment .name 
+{
+    width: 277px; 
+    background-image: url(/images/icons/ico_assignment.png);
+    background-repeat: no-repeat;
+    padding-left: 21px;
+}
+.reviews .assignment .assignment-period { width: 367px; }
+.reviews .assignment .command { width: 209px; }
+.assignment .active { }
+.reviews .clear { float: none !important; }
+    
+.reviews th div { float: left; height: 20px; }
+.reviews th .name { width: 303px; }
+.reviews th .assignment-period { width: 212px; }
+.reviews th .category { width: 110px; }
+.reviews th .command { width: 228px; }
+
+.reviews .assignment .clear {clear: both; float: none !important; height: 0px; min-height: 0px; }
+    
+.command-link { padding: 0px 3px; width: 16px; float: left; height: 16px; }       
+/*.reviews .grid-row td, 
+.reviews .alt-grid-row td { padding: 0px 0px; }*/
+
+.nested .left-command-col { padding: 3px !important; }
+
+/* Create Performance Review
+****************************************/
+.review .form-label { width: 85px; }
+.review .form-label.category { width: 58px; }
+.review .form-field select { width: 185px; }
+.review .form-field textarea { width: 599px; }
+.review .description { padding-left: 7px; }
+        
+.review .grid-row td.order { width: 45px; }
+.review .grid-row td.order input { width: 18px; }
+.review .grid-row .title { width: 575px; }
+.review .grid-row .type { width: 245px; }
+.review .grid-row td.edit { width: 40px; }
+.review .grid-row td.remove { width: 60px; }
+
+.review #addExistingQuestion, .review #createNewQuestion 
+{
+    cursor: pointer;
+}
+
+/* Category Control 
+***************************************/
+#category-container { min-width: 332px; }
+#category-container select { width: 200px; }
+#category-container input { width: 194px; }        
+    
+#category-select 
+{
+    padding: 0px 9px 11px 9px;
+}
+    
+#category-edit 
+{
+    border: solid 1px #3b6891;
+    background-color: #F3F9FC; 
+    padding: 5px;  
+    display: none;            
+    margin-top: -3px; 
+}
+
+#category-edit input 
+{
+    float: left;
+}
+    
+.category-add-category 
+{
+    display: inline-block;
+    cursor: pointer;
+    color: #003880;
+    padding-left: 6px;
+}
+#category-buttons 
+{
+    float: left;
+    padding-left: 8px;
+}
+#category-buttons div 
+{ 
+    cursor: pointer; 
+    float: left;
+    color: #003880;
+}
+#category-buttons #cancel
+{
+    padding: 3px 10px;
+}
+
+/* Unit Select Control
+****************************************/
+.search-clear-div
+{
+    float: left; width: 0px; overflow: visible; position: relative; left: -19px; top: 3px;
+}
+
+.unit-select-div div.search-label 
+{
+    float: left;
+    padding-top: 4px;    
+}
+
+.unit-select-div div.input-panel
+{
+     float: left;
+}
+
+.unit-select-div div.unit-open-modal
+{
+    float: left;
+}
+
+.unit-select-div div.unit-open-modal A
+{
+    position: relative; top: 4px; left: 3px; margin: 0px;
+}
+
+/* Manage/Create Review Categories
+****************************************/
+.edit-form.review-category .form-field
+{
+    width: 275px;
+}
+
+.review-categories .description 
+{
+    width: 775px;
+}
+.review-categories .active 
+{
+    width: 75px;
+}
+.review-categories .command
+{
+    width: 50px;
+    text-align: right;
+} 
+
+/* Manage/Create Question Categories
+****************************************/
+.edit-form.question-category .form-field
+{
+    width: 275px;
+}
+
+.edit-form.question-category .form-label
+{
+    width: 65px;
+}
+
+.edit-form.question-category #MainContent_chkActive
+{
+    width: auto;
+}
+
+.edit-form.question-category span 
+{
+    margin-left: -3px;
+}
+/* Create Assignment
+****************************************/
+.manage-header span.review-title { font-weight: normal; }
+
+
+/* Manage Questions
+****************************************/
+.manage-questions .search-left,
+.search-params .search-left
+{
+    float: left;        
+}
+    
+.manage-questions .search-right,
+.search-params .search-right
+{
+    float: right;
+}
+
+.manage-questions .search-left .label,
+.search-params .search-left .label
+{
+    margin-right: 10px;
+    padding: 6px 0px 0px 0px;
+}
+
+.manage-questions .search-left div.search-box,
+.search-params .search-left div.search-box
+{
+    float: left;
+    width: 450px;
+    padding-top: 5px;
+}
+
+.manage-questions input.search-parm, 
+.search-params input.search-parm
+{
+    float: left;
+    width: 200px;
+}
+
+.manage-questions .search-img,
+.search-params .search-img
+{
+    float: left; 
+    padding-left: 10px;   
+    margin-top: -3px;
+}
+
+.manage-questions div.question-cell-wrapper 
+{
+    width: 250px;
+}
+
+.manage-questions div.edit-ico-div, .manage-questions div.copy-ico-div, .manage-questions div.remove-ico-div 
+{
+    width: 16px;
+    padding: 1px 3px 0px 0px;
+    float: right;
+}
+
+.manage-questions .search-form-section.search-left .status 
+{
+    width: 94px;
+    margin-left: 10px;
+}
+.manage-questions .search-form-section.search-left .categories
+{
+    margin-left: 10px;
+}
+
+.manage-questions .search-form-section.search-left .search-button 
+{
+    padding-top: 13px;
+}
+
+.create-edit-question div.pad-top  
+{
+    padding-top: 8px; 
+}
+.create-edit-question .narrow  
+{
+    width: 75px; 
+}
+.create-edit-question .auto-width  
+{
+    width: auto; 
+}
+.create-edit-question .check-field  
+{
+    float: left; 
+}
+.create-edit-question #category-select  
+{
+    padding-left: 0px; 
+}
+.add-existing-question .search-form-section > div 
+{
+     padding-right: 6px; 
+}
+.add-existing-question .search-form-section .search-button  
+{
+    padding-top: 13px; 
+}
+.add-existing-question .search-left  
+{
+    float: left; 
+}
+.add-existing-question .search-right  
+{
+    float: right; 
+}
+.add-existing-question div.question-cell-wrapper  
+{
+    width: 290px; 
+}
+.add-existing-question .search-left .search-box-label 
+{
+    margin-right: 5px;
+    padding-top: 4px;
+}
+.add-existing-question .search-left input 
+{
+    width: 300px;
+}
+.add-existing-question .search-left .search-box-label
+, .add-existing-question .search-left .search-box
+{
+    float: left;
+}
+.add-existing-question #questions-grid .left-command-col 
+{
+    width: 65px;
+}
+
+/* Manage Questions
+****************************************/
+.manage-question-categories div.category-cell-wrapper { width: 290px; }
+
+.manage-question-categories div.edit-ico-div, .manage-question-categories div.remove-ico-div 
+{
+    width: 16px;
+    padding: 1px 3px 0px 0px;
+    float: right;
+}
+
+.manage-question-categories #grid 
+{
+    margin-top: 10px;
+}
+
+/* Report Builder
+****************************************/
+.report-builder .field-section-header
+{
+    background-color: #f3f9fc;
+    margin: 15px 0px 15px 0px;
+    padding: 3px;
+}
+
+#step-1-img, #step-2-img
+{
+    float: left;
+    margin-right: 4px;
+}
+
+#step-3-img 
+{
+    float: left;
+}
+
+.report-builder .field-section-header span 
+{
+    color: #006002;
+    font-size: 1.2em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.report-builder .field-list 
+{
+    margin: 5px 0px 10px 4px;
+}
+
+.report-builder .report-type-select
+{
+    margin-top: 15px;
+}
+
+.report-builder .selected-fields 
+{
+    padding: 5px 10px 0px 10px;   
+    width: 267px;
+    float: left;
+}
+
+.report-builder .selected-fields select
+{
+    padding: 3px;
+    height: 300px;
+    width: 100%;
+}
+
+.report-builder .section-title 
+{
+    float: left;
+}
+
+.report-builder .section-header-links 
+{
+    float: right;
+    padding-top: 3px;
+}
+
+.report-builder .section-title H2 
+{
+    margin-top: 0px;
+}
+
+.report-builder div.one-third-div H2, .report-builder div.two-thirds-div H2 
+{
+    margin-top: 0px;    
+}
+
+.report-builder div.one-third-div, .report-builder div.two-thirds-div  
+{
+    margin-top: 5px;
+}
+
+.report-builder .sort-icons 
+{
+    float: left;
+    width: 16px;
+    padding: 5px 0px 0px 0px;
+}
+
+.report-builder .sort-icons div 
+{
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.choose-filter .form-field 
+{
+    width: auto;
+}
+
+.choose-filter .form-label 
+{
+    width: 50px;
+}
+
+.choose-filter .one-third-div, .choose-filter .two-thirds-div
+{
+    margin: 0px 0px 0px 0px;
+}
+
+.choose-filter .one-third-div select, .choose-filter .one-third-div input, .choose-filter .one-third-div a
+{
+    margin: 5px 0px 10px 10px;
+}
+
+.choose-filter .one-third-div select 
+{
+    width: 295px;
+    height: 350px;
+}
+
+.choose-filter .rule-buttons 
+{   
+    /*float: right;*/
+}
+
+.choose-filter .edit.rule-buttons  
+{
+    width: 86px;
+    vertical-align: middle;    
+}
+
+.choose-filter .edit.rule-buttons div 
+{
+    float: left;
+}
+.choose-filter .edit.rule-buttons div.save 
+{
+    padding-right: 5px;
+}
+.choose-filter .edit.rule-buttons div.cancel
+{
+    margin-top: 4px;
+}
+.choose-filter .view.rule-buttons  
+{
+   width: 44px;
+   float: right;
+}
+
+.choose-filter .filter-div 
+{
+    margin-left: 10px;
+    width: 616px;
+}
+
+.choose-filter #TextInput .input-box 
+{
+    width: 200px;
+}
+
+.choose-filter #TextInput .field-note 
+{
+    width: 200px;
+    font-size: 0.8em;
+    
+}
+
+.choose-filter #input-label 
+{
+    width: 322px; 
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.report-builder #value-input .field-required 
+{
+    clear: both;
+    margin-right: 3px;
+    width: auto;
+}
+
+.choose-availability .form-field  
+{
+    width: 375px;
+}
+
+.choose-availability .form-field input 
+{
+    width: 365px;
+}
+
+.report-viewer { margin: 10px;}
+
+
+.report-viewer .report-sub-header 
+{
+    background-color: #FFFFFF;    
+}
+
+.report-viewer .report-sub-header  
+{
+    margin-left: 5px;
+}
+
+
+.report-viewer .common-grid 
+{
+    margin-top: 10px;
+}
+
+
+.normal-cursor 
+{
+    cursor: default;
+}
+
+.manage-reports .right-command-col 
+{
+    width: 110px;    
+}
+
+/* Create Assignments
+****************************************/
+#assignment .form-field textarea 
+{
+    width: 361px;
+}
+        
+    
+#assignment fieldset.custom .form-label
+, #assignment fieldset.custom .form-field
+, #assignment .form-field select    
+, #assignment .form-field.radio-input input    
+{
+    width: auto;
+}
+    
+#assignment .form-label
+{
+    margin-top: 7px;
+}
+#assignment .form-label.first-column 
+{
+    margin: 7px 0 0;
+    width: 37px;
+}
+    
+.form-field.date-input input
+{
+    width: 75px;
+}
+    
+input.numeric-input
+{
+    width: 25px !important;
+}
+    
+fieldset  
+{
+    border: 0px; 
+    margin: 0px 0px 15px 0px;    
+    padding: 5px 10px 0px;
+}
+
+legend
+{
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+    
+.form-field-subset 
+{
+    margin-left: 37px;
+}
+   
+   
+#assignment .two-thirds-div
+{
+    padding-left: 10px;
+    width: 601px;
+}
+    
+#assignment .form-label, #assignment .form-field.radio-input 
+{
+    margin: 7px 0px 0px;
+}    
+#assignment .form-label.from
+{
+    width: 37px;
+    padding-right: 10px;
+}
+#assignment .form-label.to
+{
+    width: auto;
+    padding-right: 10px;
+}    
+    
+#assignment .form-field.radio-input input    
+{
+    margin-left: 17px;
+    margin-right: 7px;
+    margin: 0px 7px 0px 17px;
+}
+#assignment .expires, #assignment .expires
+{
+    margin-right: 5px;
+}
+#assignment .form-field-subset
+{
+    padding-top: 7px;
+}
+#assignment .disabled 
+{
+    color: Gray;    
+}
+#assignment span.field-required 
+{
+    margin: 0px;
+}
+#assignment .section fieldset .field-required 
+{
+    margin-top: 5px;
+}
+#assignment .section ul 
+{
+    margin: 0px;
+}
+
+/* Privacy Statement
+****************************************/
+.privacy h2, .privacy p{ padding-left: 10px;}
+
+/* FAQ
+****************************************/
+.faq h2, .faq p { padding-left: 10px; }
+
+/* Home page controls
+****************************************/
+.show-all { float: right; }
+
+/* Review control styles
+****************************************/
+
+.spell-check 
+{
+    background-image: url(/images/icons/ico_spellcheck.png);
+    background-repeat: no-repeat;
+    padding-left: 26px;
+    padding-top: 4px;
+    margin: 12px 0px;
+    height: 20px;    
+    cursor: pointer;
+    color: #003880;    
+}
+
+.review h2 
+{
+    padding-left: 0px;
+}
+
+.error
+{
+    color:#f00;
+}
+
+.col
+{
+    float:left;
+    margin:0 20px 0 0;
+}
+
+.col .field
+{
+    clear:both;
+    padding:0 0 5px 0;
+}
+
+.col .field .label
+{
+    float:left;
+    font-weight:bold;
+    width:150px;   
+}
+
+.col .field .value
+{
+    float:left;     
+}
+
+.review hr
+{
+    clear:both;
+}
+
+.review .questions
+{
+    margin-top:20px;
+}
+
+.question
+{
+    padding:0 0 15px 0;
+}
+
+.question.rating-scale .question-text,
+.question.short-answer.read-only .question-text
+{
+    border-bottom: solid 1px #bbb;
+}
+
+.question.short-answer .question-response textarea, .question.short-answer .question-response span
+{
+    margin-left: 8px; 
+}
+
+.question .question-text
+{
+    padding:3px;
+    margin:0 0 5px 0;
+    width: auto;
+    font-weight: bold;
+}
+
+.question .leave-comment,
+.question .comment-form,
+.question .other-responses
+{
+    display:block;
+    margin:5px 8px;
+}
+
+.question .question-response .error
+{
+    display:block;
+    padding:5px 0 0 0;
+}
+
+.question .user-response
+{
+    padding: 10px;
+    width: auto;
+    margin:0 0 10px 0;
+    /*margin: 15px auto 15px auto;   
+    padding: 15px; */    
+    border: 1px solid #e2f1fb;    
+    background-color: #F4F9FD;
+}
+
+.question .user-response .name
+{
+    font-weight:bold;
+}
+
+.question .user-response .field
+{
+    clear:both;
+}
+
+.question .user-response .field .label
+{
+    display:inline-block;
+    width: 75px;
+}
+
+.question .user-response .field .value
+{
+    display:inline-block;
+}
+
+.question textarea
+{
+    width: 917px;
+}
+
+.hidden,
+.question .hidden
+{
+    display:none;
+}
+
+.comments-form label
+{
+    display:block;
+    font-weight:bold;
+}
+
+.review-summary
+{
+    padding:0 0 10px 0;
+}
+
+.review-summary .title
+{
+    font-size:1.1em;
+    line-height:1.5em;
+    font-weight:bold;
+}
+
+.review-summary .for .name
+{
+    font-style:italic;
+}
+
+.commands
+{
+    margin: 15px 0px;
+}
+
+.commands .save-cancel
+{
+    float: left;
+}
+.commands .submit 
+{
+    float: right;
+}
+
+.sign-off div div
+{
+    float: left;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.sign-off div.buttons 
+{
+    padding-top: 8px;
+}
+.sign-off div.comments-form
+{
+    float: none;
+}
+.sign-off div.comments-form textarea
+{
+    width: 100%;
+}
+.sign-off div.spell-check 
+{
+    float: none;    
+}
+
+.user-comments h3
+{
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.user-comments div 
+{
+    margin-bottom: 20px;
+}
+
+
+/******************************/
+/** View Assignment Progress **/
+/******************************/
+#assignment-progress .form-label 
+{  
+    width: 150px;
+}
+#assignment-progress .overview-section 
+{
+    float: left;
+}
+#assignment-progress .overview-section > div 
+{
+    clear: left;
+}
+#assignment-progress .progress-bar 
+{
+    margin-left: -3px;
+    vertical-align: middle;
+}
+#assignment-progress .overview-section .form-field 
+{
+    width: 250px;
+}
+#assignment-progress .section 
+{
+    margin-left: 15px;    
+    padding: 5px 10px 0px;
+}
+#assignment-progress .search-section 
+{
+    float: left;
+}
+#assignment-progress .chart-section 
+{
+    float: right;
+}
+#assignment-progress .search-form-section .form-label
+{
+    width: 170px;
+    text-align: right;
+}
+#assignment-progress .search-form-section .form-field 
+{
+    width: 280px;
+}
+#assignment-progress .search-form-section .form-field input 
+{
+    width: auto; 
+}
+#assignment-progress .search-form-section .form-field input.search-box
+{
+    width: 136px;
+}
+#assignment-progress .search-form-section div label 
+{
+    display: inline;
+}
+#assignment-progress .search-form-section > div 
+{
+    /* clear: left; */
+    float: none;
+}        
+#assignment-progress .checkbox-list 
+{
+    list-style: none;   
+    margin: 0px;
+    padding: 0px;
+}
+#assignment-progress .checkbox-list li 
+{
+    float: left;
+    padding-right: 10px;
+    min-width: 82px;
+}
+        
+#assignment-progress .grid-row td 
+{
+    vertical-align: top;
+}
+        
+#assignment-progress #reviewer-grid td .employees 
+{
+    display: none;
+}
+        
+#assignment-progress #reviewer-grid td .manager 
+{
+    width: 650px;
+    float: left;
+}
+/*#assignment-progress #reviewer-grid td .status
+{
+    width: 200px;
+    float: left;
+}*/
+#assignment-progress #reviewer-grid td .employees 
+{
+    clear: left;
+    margin-left: -31px;
+    /*padding-left: 231px;
+    width: 710px;               */
+    background-color: #fff;
+}
+        
+#assignment-progress #reviewer-grid .grid-row.parent 
+{
+    min-height: 19px;
+    padding-top: 3px;
+}
+        
+#assignment-progress th div { float: left; }
+#assignment-progress th .manager { width: 150px; }
+#assignment-progress th .employees { width: 200px; height: 15px; }
+#assignment-progress th .relationship { width: 100px; }
+#assignment-progress th .step { width: 150px; }
+#assignment-progress th .status { width: 150px; }
+#assignment-progress th .duedate { width: 100px; height: 15px; }
+        
+#assignment-progress .employees .employee { clear: left; min-height: 17px; padding: 3px 3px 3px 184px; }
+#assignment-progress .employees .employee div { float: left; }
+#assignment-progress .employees .employee div.clear { float: none; }
+#assignment-progress .employees .employee .name { width: 200px; }
+#assignment-progress .employees .employee .status { width: 150px; }
+#assignment-progress .employees .employee .duedate { width: 100px; }
+#assignment-progress .employees .employee .coreviewer { width: 193px; min-height: 16px; }
+#assignment-progress .employees .employee .commands { width: 110px; margin-top: 0px; }
+
+/** Created By / Modified By Bar **/
+.audit-bar 
+{
+    margin: 15px auto 15px auto;    
+    width: auto;
+    border: 1px solid #e2f1fb;
+    padding: 15px;
+    background-color: #F4F9FD;
+}
+
+/** Create/Edit User **/
+ul.user-related-info 
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul.user-related-info li 
+{
+    padding: 5px 0px;
+}
+
+/** Preview Review Modal **/
+.preview-review .review 
+{
+    width: 623px;
+    height: 517px;
+    overflow: hidden;
+    overflow-y: auto;            
+}
+
+/** Past Due Review **/
+.past-due { color: #ff0000; }
+
+.content 
+{
+    border: 0px; 
+    margin: 0px 0px 15px 0px;    
+    padding: 5px 10px 0px;
+}
+
+
+/** Content Control **/
+.content-area h2
+{    
+    padding-left: 4px;
+}
+.content-area p 
+{
+    padding: 0px 4px;
+}
+
+.message-bar 
+{
+    margin: 20px 0px;
+    padding: 15px 10px;
+}
+
+/** Invite Coreviewers **/
+#invite-coreviewer .sub-header
+{
+    font-weight: bold;
+    border-bottom: solid 1px #bbb;
+    padding-top: 20px;
+}
+#invite-coreviewer .current-coreviewers
+{
+    margin-top: 20px;
+} 
+
+
+#auto-save-message-container 
+{
+    text-align: right;
+}
